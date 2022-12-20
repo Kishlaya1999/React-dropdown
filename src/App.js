@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Dropdown from "./component/Dropdown";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	
+	// These items would be displayed in the dropdown menu
+	const options = ["Yes", "No","Probably not"];
+
+	return (
+		<div className="App">
+			{/* Question */}
+			<h1>Should you use dropdown ?</h1>
+			{/* Dropdown Component */}
+			{/* options array is send as props to Dropdown component */}
+			<Dropdown options = {options}/>
+		</div>
+	);
 }
 
 export default App;
