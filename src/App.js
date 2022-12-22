@@ -1,10 +1,10 @@
 import "./App.css";
-import Dropdown from "./component/Dropdown";
+import Dropdown from "./components/Dropdown";
 
 function App() {
 	
 	// These items would be displayed in the dropdown menu
-	const options = ["Yes", "No","Probably not"];
+	const options = ["Yes","No"];
 
 	return (
 		<div className="App">
